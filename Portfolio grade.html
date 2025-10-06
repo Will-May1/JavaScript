@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script>
+            function add(){
+            var num1=document.getElementById("analysis").value;
+            var num2=document.getElementById("design").value;
+            var num3=document.getElementById("implementation").value;
+            var num4=document.getElementById("evaluation").value;
+            let num5 = Number(num1)+Number(num2)+Number(num3)+Number(num4)
+            if (num5 <= 3) {
+                var left = 4-num5
+                alert(`U, ${left} marks for next band`)
+            } else if (num5 <= 12) {
+                var left = 13-num5
+                alert(`G, ${left} marks for next band`)
+            } else if (num5 <= 21) {
+                var left = 22-num5
+                alert(`F, ${left} marks for next band`)
+            } else if (num5 <= 30) {
+                var left = 31-num5
+                alert(`E, ${left} marks for next band`)
+            } else if (num5 <= 40) {
+                var left = 41-num5
+                alert(`D, ${left} marks for next band`)
+            } else if (num5 <= 53) {
+                var left = 54-num5
+                alert(`C, ${left} marks for next band`)
+            } else if (num5 <= 66) {
+                var left = 67-num5
+                alert(`B, ${left} marks for next band`)
+            } else if (num5 <= 79) {
+                var left = 80-num5
+                alert(`A, ${left} marks for next band`)
+            } else if (num5 >= 80) {
+                alert(`A*, Top Band Reached`)
+            }
+        }
+    </script>
+    </head>
+    <body>
+        <input type="number" id="analysis"></input><br>
+        <input type="number" id="design"></input><br>
+        <input type="number" id="implementation"></input><br>
+        <input type="number" id="evaluation"></input><br>
+        <button type="button" onclick="add()">Total Mark</button>
+    </body>
+</html>

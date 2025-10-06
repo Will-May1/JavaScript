@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            function add(){
+                var toavr = document.getElementById("avr").value
+                var total = 0
+                for(let i = 0; i < toavr; i++) {
+                    var num1 = Number(prompt("Enter Number"));
+                    total += num1;
+                    console.log(num1);
+                    console.log(total);
+                }
+                var avr = total/toavr;
+                alert(total)
+                alert(avr);
+            }
+    </script>
+    </head>
+    <body>
+        <input type="number" id="avr">How many numbers would you like to average?</input><br>
+        <button type="button" onclick="add()">Start Entering</button>
+    </body>
+</html>
